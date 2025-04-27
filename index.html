@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <img class="website__logo" src="utility/website-logo.png" alt="website logo">
+
+        <ul class="nav__links__container">
+            <li>Tour Packages</li>
+            <li>Destinations</li>
+            <li id="checkout-button">Check-out</li>
+            <li id="sign-in-button">Sign-in</li>
+        </ul>
+        
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="container__item__1">
+                <img class="website__logo__2" src="./utility/website-logo.png" alt="website logo">
+
+                <p>
+                    Solo Trekkers is a guide for anyone looking to reconnect with themselves through the power of
+                    nature. Going solo on a hike isn't just about getting away from the noise&mdash;it's about finding clarity
+                    and rediscovering what really matters. Be one of us now!
+                </p>
+
+                <div class="button__container">
+                    <button class="button__1">Register</button>
+                    <button class="button__2">Log-in</button>
+                </div>
+            </div>
+
+            <div class="container__item__2">
+                <div class="image__container">
+                    <img class="image__1" src="./utility/img__1.png" alt="image 1">
+                    <img class="image__2" src="./utility/img__2.png" alt="image 2">
+                    <img class="image__3" src="./utility/img__3.png" alt="image 3">
+                </div>
+
+                <p>
+                    Our mission is to guide you on a journey that brings growth, clarity, and transformation. Through
+                    every trek, we hope to inspire a deeper connection with yourself and the world around you. Solo
+                    hiking is not just an escape&mdash;it’s a way to find inner peace and personal growth. We believe that
+                    time spent in nature leads to a stronger sense of self and renewed purpose. And Solo Trekkers wants
+                    to help you rediscover what truly matters.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkoutButton = document.getElementById('checkout-button');
+    
+            checkoutButton.addEventListener('click', function() {
+                window.location.href = 'cart.html';
+            });
+            const signInButton = document.getElementById('sign-in-button');
+        signInButton.addEventListener('click', function() {
+            window.location.href = 'user-register.html'; 
+        });
+        const registerButton = document.querySelector('.button__1');
+            registerButton.addEventListener('click', function() {
+                window.location.href = 'user-register.html'; 
+            });
+
+            const loginButton = document.querySelector('.button__2');
+            loginButton.addEventListener('click', function() {
+                window.location.href = 'user-login.html';
+            });
+        });
+    </script>
+</body>
+
+</html>
