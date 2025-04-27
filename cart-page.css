@@ -1,0 +1,135 @@
+/* DEFAULT */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS */
+
+* {
+    font-family: Inter;
+    color: #FBF7F7;
+}
+
+.nav-links-container li {
+    text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.25);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.website-logo {
+    width: auto;
+    height: 50px;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links-container li {
+    list-style: none;
+}
+
+.nav-links-container li:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+body {
+    background-image: url(./utility/background-page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 5rem;
+}
+
+.container-1, .container-2 {
+    flex: 1;
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    width: fit-content;
+    gap: 2rem;
+}
+
+#cart {
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed #FBF7F7;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#list {
+    min-height: 200px;
+}
+
+.item {
+    background-color: #2E2E2E;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: grab;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.item:active {
+    cursor: grabbing;
+    transform: scale(1.02);
+}
+
+.item:hover {
+    background-color: #3e3e3e;
+}
+
+#cart.dragover, #list.dragover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#totalPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF94;
+    margin-top: 0.5rem;
+}

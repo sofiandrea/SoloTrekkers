@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cart-page.css">
+</head>
+<body>
+    
+    <nav>
+        <img class="website-logo" src="utility/website-logo.png" alt="website logo">
+
+        <ul class="nav-links-container">
+            <li>Tour Packages</li>
+            <li>Destinations</li>
+            <li>Check-out</li>
+            <li>Sign-in</li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <div class="main">
+            <div class="container-1">
+                <div>
+                    <h1>Cart</h1>
+                    <div class="total-price-container">
+                        <h1>Total Price:</h1>
+                        <p id="totalPrice">₱ 0.00</p>
+                    </div>
+                </div>
+                
+                <div id="cart"></div>
+            </div>
+
+            <div class="container-2">
+                <h1>Offers</h1>
+                <div id="list">
+                    <div class="item"
+                        draggable="true"
+                        data-price="1500">Hiking Package 1 - 1,500.00
+                    </div>
+
+                    <div class="item"
+                        draggable="true"
+                        data-price="2500">Hiking Package 2 - 2,500.00
+                    </div>
+                    
+                    <div class="item"
+                        draggable="true"
+                        data-price="3000">Hiking Package 3 - 3,000.00
+                    </div>
+                    
+                    <div class="item"
+                        draggable="true"
+                        data-price="5500">Hiking Package 4 - 5,500.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<script src="cart.js"></script>
+</body>
+</html>
